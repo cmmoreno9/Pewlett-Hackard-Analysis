@@ -34,3 +34,24 @@ ORDER BY COUNT(title) DESC;
 SELECT * FROM unique_titles
 
 SELECT * FROM  retiring_titles
+
+SELECT DISTINCT ON(emp.emp_no)emp.emp_no,
+	emp.first_name,
+	emp.last_name,
+	emp.birth_date,
+	dep.from_date,
+	dep.to_date,
+	t.title
+--DISTINCT ON(emp_no)
+INTO mentorship_table
+FROM employees AS emp
+	INNER JOIN dept_emp AS dep
+		ON (emp.emp_no = dep.emp_no)
+			INNER JOIN titles AS t
+				ON (emp.emp_no = t.emp_no)
+WHERE (emp.birth_date BETWEEN '1962-01-01' AND '1965-12-31')
+AND (dep.to_date = '9999-01-01')
+ORDER BY emp_no;
+
+SELECT * FROM mentorship_table 
+
