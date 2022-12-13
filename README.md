@@ -5,7 +5,7 @@
 During the module assignments, we used SQL to clean and analyze employee data. This was done by making tables, importing data, and filtering/cleaning the data. The purpose of the challenge was to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program
 
 
-Orginally created 6 tables that were realtional to each other. However, ended up with about 12 tables to properly analyze employee data. These included tables that held retirment information, current employees, unique titles and so forth. Kepping track of the ERD was essential to maintain organization. 
+Orginally created 6 tables that were realtional to each other. However, ended up with about 12 tables to properly analyze employee data. These included tables that held retirment information, current employees, unique titles and so forth. Kepping track of the ERD  (EmployeeDB.png) was essential to maintain organization. 
 
 ## Results 
 
